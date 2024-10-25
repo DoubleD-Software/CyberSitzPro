@@ -14,8 +14,10 @@ The code for the CyberSitz Pro - a modern chair with special features.
 - Temperature & Humidity Sensor
 - Web Interface (+ multi client support)
 
-<img src="images/top.jpg" alt="drawing" width="300"/>
-<img src="images/bottom.jpg" alt="drawing" width="300"/>
+<div>
+  <img src="images/top.jpg" alt="drawing" width="300"/>
+  <img src="images/bottom.jpg" alt="drawing" width="300"/>
+</div>
 
 ## Electronics
 The CSP is mainly run by an ESP32 C3 Mini with a heatsink attached, as the little chip produces a good amount of heat.
@@ -47,8 +49,10 @@ It is really satisfying to see this happen in action on multiple devices.
 
 The color picker is provided by [iro.js](https://iro.js.org). The rest of the page is plain HTML, CSS and JS. 
 
-<img src="images/ss1.png" alt="drawing" width="300"/>
-<img src="images/ss2.png" alt="drawing" width="300"/>
+<div>
+  <img src="images/ss1.png" alt="drawing" width="300"/>
+  <img src="images/ss2.png" alt="drawing" width="300"/>
+</div>
 
 (*German: color picker, fan speed, temperature, humidity, color effects (rainbow), ASS-override*)
 
