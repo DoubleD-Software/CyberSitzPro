@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CyberSitz Pro</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script>
+            const WEB_SERVER_IP = "192.168.0.1";
+            const WEBSOCKET_ADDRESS = 'ws://' + WEB_SERVER_IP + '/ws';
+        </script>
+        <script src="js/iro.min.js"></script>
+        <script src="js/iro_picker.js"></script>
+        <script src="js/fan.js"></script>
+        <script src="js/sensor.js"></script>
+        <script src="js/socket.js"></script>
+    </head>
+    <body>
+        <h1>CyberSitz Pro</h1>
+        <div class="container">
+            <div class="content">          
+                <div id="color" class="picker"></div>
+            </div>
+            <div class="content">
+                <h2>Lüftergeschwindigkeit</h2>
+                <div class="inline-container">
+                    <h3 class="percentage">0%</h3>
+                    <input type="range" min="0" max="100" value="0" class="slider">
+                </div>
+            </div>
+            <div class="content">
+                <table>
+                    <tr>
+                        <th><h2>Temperatur</h2></th>
+                        <th><h2>Feuchtigkeit</h2></th>
+                    </tr>
+                    <tr>
+                        <td><h2 class="temp">42°C/1337°C</h2></td>
+                        <td><h2 class="humi">42%</h2></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="content">
+                <table>
+                    <tr>
+                        <th><h2>Farbeffekte</h2></th>
+                        <th><h2>ASS-Override</h2></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="toggle" type="checkbox" id="colorfx"/>
+                        </td>
+                        <td>
+                            <input class="toggle" type="checkbox" id="assover"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

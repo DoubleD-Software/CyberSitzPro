@@ -1,0 +1,122 @@
+body,
+html {
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: #101010;
+    color: white;
+    overflow: hidden;
+    font-family: Arial, serif;
+    margin: 0 auto;
+    overflow-y: scroll;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+}
+
+.content {
+    padding: 10px;
+}
+
+h3 {
+    width: 15%;
+}
+
+.slider {
+    width: 80%;
+    height: 30px;
+    background: #282828;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+
+.slider::-webkit-slider-thumb {
+    width: 11px;
+    height: 11px;
+    background: black;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.slider::-moz-range-thumb {
+    width: 11px;
+    height: 11px;
+    background: black;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.inline-container {
+    display: flex;
+    align-items: center;
+}
+
+.inline-container input {
+    max-width: 70%;
+}
+
+.IroColorPicker {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    width: 100%;
+}
+
+th,
+td {
+    width: 50%;
+}
+
+.toggle {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 62px;
+    height: 32px;
+    display: inline-block;
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #282828;
+    transition: background-color ease 0.3s;
+}
+
+.toggle:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 28px;
+    height: 28px;
+    background: #fff;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    color: #fff;
+    text-shadow: -1px -1px rgba(0, 0, 0, 0.15);
+    white-space: nowrap;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
+}
+
+.toggle:checked {
+    background-color: #4CD964;
+}
+
+.toggle:checked:before {
+    left: 32px;
+}
